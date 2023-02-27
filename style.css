@@ -1,0 +1,195 @@
+
+:root {
+    --cor0: #5C6981;
+    --cor1: #8E9AAF;
+    --cor2: #CBC0D3;
+    --cor3: #FEEAFA;
+    --cor4: #EFF1FF;
+
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+}
+
+header {
+    background: var(--cor1);
+    position: relative;
+
+    
+    width: 384px;
+    height: 279px;
+    left: 0px;
+    top: 0px;
+}
+.img {
+    position: absolute;
+    left: 119px;
+    top: 28px;
+}
+
+h1 {
+
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 46%);
+    color: var(--cor4) ;
+    background: var(--cor2);
+
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 4.0rem;
+
+    margin-bottom: 2px;
+
+    position: relative;
+    top: 4px;
+    right: 98px;
+    
+}
+h1 span {
+    position: absolute;
+    bottom: 5.2rem;
+    left: 9.8rem;
+
+    background: var(--cor2);
+
+    width: 384px;
+    height: 49px;
+    top: 201px;
+}
+.ts {
+    position: absolute;
+    margin-bottom: 2px;
+}
+
+body {
+    background-color: var(--cor4);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+}
+
+main {
+    background: white;
+    margin-bottom: 6rem;
+}
+
+main p {
+    font-family: 'Palanquin', sans-serif;
+    color: var(--cor0);
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 15px;
+/* or 75% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin: 14px 30px 60px;
+} 
+
+.ice-cream {
+    position: relative;
+    animation-name: icetop;
+    animation-duration: 700ms;
+    animation-direction: reverse;
+}
+
+.ice-cream h2 {
+
+    border-radius: 2.0rem;
+    
+    height: 2.8rem;
+    padding: 0 1.6rem;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+
+    position: absolute;
+    bottom: 75%;
+    left: 65%;
+
+    font-family: 'Staatliches';
+    background: var(--cor3);
+    color: var(--cor0);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin: 2px;
+
+    /* ANNIMATION */
+
+    animation-name: icetop;
+    animation-duration: 700ms;
+    animation-direction: reverse;
+    animation-delay: 700ms;
+    
+
+}
+    /* ANNIMATION 
+
+@keyframes icedown {
+    0% {
+        opacity: 0;
+        transform-translate-Y:(15px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0);
+    }
+
+} */
+ 
+@keyframes icetop {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+} 
+
+main .ice-cream {
+    animation-name: icetop;
+    animation-duration: 700ms;
+    animation-direction:reverse;
+    animation-delay: 700ms;
+}
+ img {
+
+    filter:brightness(0.8);
+    object-fit: cover;
+    transition: transform 200ms;
+}
+
+.pag {
+    max-width: 38.4rem;
+    text-align: center;
+
+    margin: 0 auto;
+    background: var(--cor4);
+    
+}
+
+@media (max-width: 40em){
+    body {
+        background-color: black;
+    }
+   
+}
+
+#img2 {
+    margin: 5px 5px 55px 5px;
+
+}
